@@ -52,6 +52,8 @@ const (
 
 	DefaultUseXattrs = false // Whether Sync Gateway uses xattrs for metadata storage, if not specified in the config
 
+	DefaultViewQueryPageSize = 5000 // This must be greater than 1, or the code won't work due to windowing method
+
 )
 
 func UnitTestUrl() string {
